@@ -1,0 +1,107 @@
+.contact--wrapper {
+  width: 100%;
+
+  p {
+    line-height: 1.5;
+  }
+
+  a {
+    color: green;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  h2 {
+    @media screen and (min-width: $small-break){
+      margin: 1em 0;
+
+      font-size: 1.5em;
+    }
+    @media screen and (min-width: $medium-break){
+      font-size: 2em; 
+    }
+  }
+
+  form {
+    @media screen and (min-width: $small-break){
+      margin: 0 1em;
+
+      text-align: left;
+
+      label {
+        display: block;
+        margin-bottom: .5em;
+        margin-top: 1em;
+
+        color: #999;
+      }
+
+      input,
+      textarea {
+        padding: 1em;
+        width: 100%;
+
+        border: solid 1px #ccc;
+        border-radius: 6px;
+      }
+
+      textarea {
+        height: 10em;
+      }
+
+      button {
+        margin: 1em 0;
+        width: 100%;
+
+        cursor: pointer;
+        font-size: 1em;
+      }
+    }
+    @media screen and (min-width: $medium-break){
+      margin: 0 auto;
+      max-width: 20vw;
+    }
+  }
+
+  .social--media {
+    @media screen and (min-width: $small-break){
+      padding: 0 1em;
+
+      border-right: solid 1px #000;
+      color: #999;
+      
+      transition: all .2s linear;
+
+      &:hover {
+        font-weight: bold;
+      }
+
+      &:last-child {
+        border-right: none;
+      }
+    }
+    
+    @media screen and (min-width: $medium-break){
+      font-size: 1.5em;
+    }
+  }
+
+  .social--media__twitter {
+    &:hover {
+      color: #1DA1F2
+    }
+  }
+
+  .social--media__linkedin {
+    &:hover {
+      color: #0077B5;
+    }
+  }
+
+  .social--media__linkedin {
+    &:hover {
+      color: #000;
+    }
+  }
+
+}

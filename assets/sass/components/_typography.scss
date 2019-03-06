@@ -1,0 +1,79 @@
+html {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.title,
+.subtitle {
+  display: block;
+
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+}
+
+.title {
+  @media screen and (min-width: $small-break){
+    color: #fff;
+    font-size: 3.2em;
+    letter-spacing: 1px;
+  }
+  @media screen and (min-width: $medium-break){
+    font-size: 100px;
+  }
+}
+
+.subtitle {
+  @media screen and (min-width: $small-break){
+    padding-bottom: 1em;
+    font-size: 150%;
+    color: #fff;
+    word-spacing: 5px;
+  }
+  @media screen and (min-width: $medium-break){
+    padding-bottom: 25px;
+    font-size: 42px;
+  }
+}
+
+h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+
+
+.home {
+  .button--grey {
+    @media screen and (min-width: $small-break){
+      display: block;
+      margin: .5em 0;
+      font-size: 1em;
+    }
+    @media screen and (min-width: $small-medium-break){
+      display: inline-block;
+      margin: 0 15px 0 0;
+    }
+    @media screen and (min-width: $medium-break){
+      font-size: 1.2em;
+    }
+  }
+}
