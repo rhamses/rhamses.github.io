@@ -1,0 +1,22 @@
+{
+  "name": "nuxt",
+  "description": "A portfolio website",
+  "main": "",
+  "authors": [
+    "Rhamses Soares <rhamses@ambiente1.com.br>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/rhamses/rhamses.github.io",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "devicon": "*",
+    "reset-css": "^3.0.0"
+  }
+}
