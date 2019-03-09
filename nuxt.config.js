@@ -34,7 +34,7 @@ module.exports = {
       {type: "text/javascript", src: "/js/word-switcher.js"}
     ]
   },
-  css:['~/bower_components/reset-css/reset.css', '~/bower_components/devicon/devicon.min.css', '@/static/css/main.css', '@/assets/sass/main.scss'],
+  css:['@/bower_components/reset-css/reset.css', '@/bower_components/devicon/devicon.min.css', '@/static/css/main.css', '@/assets/sass/main.scss'],
   /*
   ** Customize the progress bar color
   */
