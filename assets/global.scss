@@ -1,0 +1,42 @@
+:root {
+  --accent: 124, 58, 237;
+  --accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #da62c4 30%, white 60%);
+  --radius: 15px;
+  --link-color: #C658A3;
+  --main-color: #666;
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+
+  background-color: #D9E6F8;
+  color: var(--main-color);
+  font-family: system-ui, sans-serif;
+  font-size: 100%;
+}
+
+body, div#__nuxt, .content {
+  height: 100%;
+}
+
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+  Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.highlight {
+  font-weight: bold;
+  &__h1 {
+    font-size: 150%;
+  }
+  &__h2 {
+    font-size: 120%;
+  }
+}
+
+.link__small {
+  flex-basis: 33%;
+  color: var(--main-color) !important;
+  font-weight: normal !important;
+}

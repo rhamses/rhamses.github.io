@@ -2,3 +2,11 @@
 bower_components/
 node_modules/
 dist/
+node_modules
+*.log*
+.nuxt
+.nitro
+.cache
+.output
+.env
+dist

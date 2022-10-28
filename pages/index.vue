@@ -1,30 +1,59 @@
 <template>
-  <section class="container home">
-    <div>
-      <h1 class="title">
-        &lt;RHAMSES&nbsp;/&gt;
-      </h1>
-      <div class="content">
-        <h2 class="subtitle">
-          <span class="in" id="word-switcher">
-            <p class="glitch active" data-text="design" data-oid="0">front end</p>
-            <p class="glitch" data-text="develop" data-oid="1">back end</p>
-            <p class="glitch" data-text="love" data-oid="2">full stack</p>
-          </span> developer.
-        </h2>
-      </div>
-      <nuxt-link class="button--grey" to="/jobs">Jobs</nuxt-link>
-      <nuxt-link class="button--grey" to="/skills">Skills</nuxt-link>
-      <nuxt-link class="button--grey" to="/contact">Contact</nuxt-link>
+  <main class="content">
+    <div class="first-column">
+      <Bio />
     </div>
-  </section>
+    <div class="middle-column">
+      <Intro />
+      <ReadLater />
+    </div>
+    <div class="last-column">
+      <Repos />
+      <Blog />
+    </div>
+  </main>
 </template>
 
-<script>
-
-export default {
-  data: () => ({
-    text: 'Full Stack Developer'
-  })
+<style scoped lang="scss">
+.content {
+  @media screen and (min-width: 0) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    height: auto;
+  }
+  @media screen and (min-width: 1024px) {
+    height: 100%;
+    flex-direction: row;
+  }
 }
-</script>
+.first-column {
+  flex-basis: 20%;
+}
+.last-column {
+  flex-basis: 30%;
+}
+.first-column,
+.last-column,
+.middle-column {
+  @media screen and (min-width: 0) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    .card {
+      flex: 1;
+  
+      &:first-child {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+</style>
