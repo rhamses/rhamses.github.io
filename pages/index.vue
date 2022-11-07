@@ -29,10 +29,20 @@
   }
 }
 .first-column {
-  flex-basis: 20%;
+  @media screen and (min-width: 0) {
+    flex-basis: 15%;
+  }
+  @media screen and (min-width: 1024px) {
+    min-width: 220px;
+  }
 }
 .last-column {
-  flex-basis: 30%;
+  @media screen and (min-width: 0) {
+    flex-basis: 30%;
+  }
+  @media screen and (min-width: 1024px) {
+    min-width: 400px;
+  }
 }
 .first-column,
 .last-column,
