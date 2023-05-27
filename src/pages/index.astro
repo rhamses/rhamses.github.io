@@ -1,0 +1,85 @@
+---
+import Layout from '../layouts/Minimalist.astro';
+import Card from '../components/Card.astro'
+import Header from '../sections/header.astro'
+import Footer from '../sections/footer.astro'
+import Achievement from '../components/Achievement.astro'
+import TimelineItem from '../components/TimelineItem.astro'
+---
+
+<Layout title="Welcome to Astro.">
+		<Header />
+		<!-- Skills and intrest section -->
+		<div class="container">
+			<div class="sections">
+				<h2 class="section-title">Skills</h2>
+				<Card experience="+ 5 years" title="Object programming & frameworks">
+					PHP, Node.js, Javascript, Silex, …
+				</Card>
+				<Card experience="+ 3 years" title="Design integration">
+					Style and tools, JS Frameworks
+				</Card>
+				<Card experience="+ 6 years" title="Linux">
+					Scripting, Servers management and protocols, Automation
+				</Card>
+			</div>
+			<div class="sections">
+				<h2 class="section-title">Interests</h2>
+				<Card title="Scripting languages">
+					PHP, JS, Bash, Python
+				</Card>	
+				<Card title="Hacking">
+					Linux, Crawlers, Bots, Network
+				</Card>		
+			</div>
+		</div>
+		
+		<!-- Achievements -->
+		<div class="container cards">
+			<Achievement unit="+" value="60" title="Projects">
+				Adapting and creating solutions for customer's needs
+			</Achievement>
+			<Achievement unit="%" value="50" title="Web">
+				Applications development integrating third-party services and mobile client(s)
+			</Achievement>
+			<Achievement unit="%" value="30" title="Technical solutions">
+				Such as web services, scripts, configurations
+			</Achievement>
+			<Achievement unit="%" value="20" title="Leading">
+				Web projects and ensure the quality of delivery
+			</Achievement>
+		</div>
+
+		<!-- Timeline -->
+		<div class="container">
+			<ol class="timeline">
+				<li>
+					<p class="line">Experiences</p>
+					<TimelineItem date="Today - Apr. 2016">
+						Lead Developer @Geronimo
+					</TimelineItem>
+				</li>
+				
+				<li>
+					<TimelineItem date="Apr. 2016 - Sep. 2015">
+						Freelance
+					</TimelineItem>
+				</li>
+				
+				<li>
+					<p class="line">Education</p>
+					<TimelineItem date="2015 - 2013">
+						DUT "Métiers du multimédia et de l'internet"
+					</TimelineItem>
+				</li>
+				
+				<li>
+					<TimelineItem date="2013 - 2008">
+						Art & Design studies
+					</TimelineItem>
+				</li>
+			</ol>
+		</div>
+		<Footer />
+	</Layout>
+	

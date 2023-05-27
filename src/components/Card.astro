@@ -1,0 +1,17 @@
+---
+export interface Props {
+	experience: string;
+	title: string;
+	description: string;
+}
+
+const { experience, title, description } = Astro.props;
+---
+
+<div class="list-card">
+	<span class="exp">{experience}</span>
+	<div>
+		<h3>{title}</h3>
+		<span><slot></slot></span>
+	</div>
+</div>
