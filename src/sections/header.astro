@@ -7,12 +7,20 @@
         </figure>
         <div>
           <h1 class="name"><strong>Rhamsés</strong> Soares</h1>
-          <a href="mailto:hi@rhams.es" class="email">hi@rhams.es</a>
+          <div class="social">
+            <a href="mailto:hi@rhams.es" class="social--link">hi@rhams.es</a>
+            <a href="https://linkedin.com/in/rhamses">
+              <span class="social--link">Linkedin</span>
+            </a>
+            <a href="https://github.com/rhamses">
+              <span class="social--link">Github</span>
+            </a>
+          </div>
         </div>
-        <p class="job">
+        <a href="https://www.segurosunimed.com.br/" target="_blank" class="job">
           <span class="job--title">Tech Lead</span>
           <span class="job--location">@ Unimed Seguros</span>
-        </p>
+        </a>
       </div>
       <h2 class="lead">Development and design of web applications 
         for startups and large companies</h2>
@@ -23,7 +31,7 @@
   <style>
     @media all and (min-width: 0) {
       .hero {
-        margin: 2rem;
+        margin: 2rem 0;
         position: relative;
       }
       
@@ -51,13 +59,23 @@
         padding: 15px;
         line-height: 1;
       }
+
+      .social {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: .5em;
+      }
+
+      .social--icone {
+        height: 24px;
+      }
       
-      .email {
-        display: block;
+      .social--link {
         font-size: 24px;
         font-weight: 300;
         color: #81899C;
-        margin-top: 10px;
+        text-transform: lowercase;
       }
       
       .lead {
@@ -97,5 +115,4 @@
         margin-top: 0;
       }
     }
-    
   </style>

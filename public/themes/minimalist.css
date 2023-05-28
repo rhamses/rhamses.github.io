@@ -176,11 +176,19 @@ footer {
   max-width: 1100px;
   height: auto;
   margin: 60px auto;
+  padding: 0 1em;
 }
 
-/*Hero section*/
-
-/*hero ends*/
+/*Grid Class*/
+@media all and (min-width: 1024px) {
+  .grid {
+    display: grid;
+  }
+  .grid-col-3 {
+    grid-template-columns: 1.5fr 1fr .9fr;
+  }
+}
+/*grid ends*/
 
 /*skills & intrests*/
 
@@ -188,7 +196,7 @@ footer {
   vertical-align: top;
   display: inline-block;
   width: 49.7%;
-  height: 50px;
+  min-height: 50px;
 }
 
 .section-title {
@@ -197,50 +205,19 @@ footer {
   margin-bottom: 15px;
 }
 
-.list-card {
-  margin: 30px 0;
-}
-
-.list-card .exp,
-.list-card div {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.list-card .exp {
-  margin-right: 15px;
-  color: #4A90E2;
-  font-weight: 600;
-  width: 100px;
-}
-
-.list-card div {
-  width: 70%;
-}
-
-.list-card h3 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #5B6A9A;
-  line-height: 26px;
-  margin-bottom: 8px;
-}
-
-.list-card div span {
-  font-size: 16px;
-  color: #81899C;
-  line-height: 22px;
-}
-
 /*skill and intrests ends*/
 
 /* Achievements */
+
+.hide {
+  display: none;
+}
 
 
 .cards {
   max-width: 1120px;
   display: block;
-  margin-top: 280px;
+  /* margin-top: 280px; */
 }
 
 .card {
@@ -502,7 +479,6 @@ li .description {
 
   .container {
     margin: 0px;
-    padding: 0 15px;
   }
 
   footer {
