@@ -3,111 +3,95 @@ import Layout from '../layouts/Minimalist.astro';
 import Card from '../components/Card.astro'
 import Header from '../sections/header.astro'
 import Footer from '../sections/footer.astro'
-import Achievement from '../components/Achievement.astro'
 import TimelineItem from '../components/TimelineItem.astro'
 ---
 
 <Layout title="Welcome to Astro.">
-		<Header />
-		<!-- Skills and intrest section -->
-		<div class="container">
-			<div class="grid grid-col-3">
-				<div>
-					<h2 class="section-title">Technical Skills</h2>
-					<Card experience="+ 10 years" title="WordPress Development">
-						Custom theme and plugin building, content moderation, performance analysis, seo improvement hacks
-					</Card>
-					<Card experience="+ 10 years" title="Programming languages">
-						HTML5, CSS3, JS, PHP(5+)
-					</Card>
-					<Card experience="+ 5 years" title="Frontend and Backend frameworks">
-						<b style="font-weight: bold">Frontend:</b> Vue.js, Nuxt, Quasar, Ionic
-						<b style="font-weight: bold">Backend:</b>Express.js, Nest.js
-					</Card>
-					<Card experience="+ 3 years" title="Build Tools and Server admin">
-						<b style="font-weight: bold">Deploy via:</b> Azure CI & CD, Github Actions with test coverage in Docker yaml files
-						<br>
-						<b style="font-weight: bold">Config Linux via:</b> script bash <br>
-						<b style="font-weight: bold">Virtualization with:</b> Docker
-					</Card>
-					<Card experience="+ 3 years" title="Databases and Transport Layers">
-						MySQL, MongoDB, Neo4J, Postgree, Google Cloud firestore, Firebase, DynamoDB, Redis, RabbitMQ, AWS SQS
-					</Card>
-				</div>
-				<div>
-					<h2 class="section-title">People Skills</h2>
-					<Card title="Communication">
-						Reporting and Presentations. Leader in streamline communication across teams and level up the discourse around tasks.
-					</Card>
-					<Card title="Agile">
-						Sprint management. Thorough deadlines for each item on the sprint. Constant feedback gatherer from the P.O and stakeholders.
-					</Card>
-					<Card title="Team Management">
-						Protector of entry and mid level team members. <br><br>
-						Follow the "lead by example" model and always try to work as a single unit. <br><br>
-						Encourage exchange of experiences between members via meetups or small group discussion around a work relatable topic.
-					</Card>
-				</div>
-				<div>
-					<h2 class="section-title">Interests</h2>
-					<Card title="Product Development">
-						Scrum, Shape UP
-					</Card>	
-					<Card title="Automation">
-						Linux, Crawlers, Bots, Network
-					</Card>	
-					<Card title="Data Science">
-						Dataviz, Scrappers, Bots
-					</Card>	
-				</div>
+	<Header />
+	<!-- Skills and intrest section -->
+	<div class="container">
+		<div class="grid grid-col-3">
+			<div>
+				<h2 class="section-title">Technical Skills</h2>
+				<Card experience="+ 10 years" title="WordPress Development">
+					Custom theme and plugin building, content moderation, performance analysis, seo improvement hacks
+				</Card>
+				<Card experience="+ 10 years" title="Programming languages">
+					HTML5, CSS3, JS, PHP(5+)
+				</Card>
+				<Card experience="+ 5 years" title="Frontend and Backend frameworks">
+					<b style="font-weight: bold">Frontend:</b> Vue.js, Nuxt, Quasar, Ionic
+					<b style="font-weight: bold">Backend:</b>Express.js, Nest.js
+				</Card>
+				<Card experience="+ 3 years" title="Build Tools and Server admin">
+					<b style="font-weight: bold">Deploy via:</b> Azure CI & CD, Github Actions with test coverage in Docker yaml files
+					<br>
+					<b style="font-weight: bold">Config Linux via:</b> script bash <br>
+					<b style="font-weight: bold">Virtualization with:</b> Docker
+				</Card>
+				<Card experience="+ 3 years" title="Databases and Transport Layers">
+					MySQL, MongoDB, Neo4J, Postgree, Google Cloud firestore, Firebase, DynamoDB, Redis, RabbitMQ, AWS SQS
+				</Card>
 			</div>
-			<!-- Achievements -->
-			<div class="cards">
-				<Achievement unit="+" value="15" title="Years of experience">
-					Adapting and creating solutions for customer's needs
-				</Achievement>
-				<Achievement unit="+" value="03" title="Years as Tech Lead">
-					--
-				</Achievement>
-				<Achievement unit="%" value="30" title="Technical solutions">
-					--
-				</Achievement>
-				<Achievement unit="+" value="04" title="Blog Posts">
-					I write about Web APIs, backend development and cool tutorials.
-				</Achievement>
+			<div>
+				<h2 class="section-title">People Skills</h2>
+				<Card title="Communication">
+					Reporting and Presentations. Leader in streamline communication across teams and level up the discourse around tasks.
+				</Card>
+				<Card title="Agile">
+					Sprint management. Thorough deadlines for each item on the sprint. Constant feedback gatherer from the P.O and stakeholders.
+				</Card>
+				<Card title="Team Management">
+					Protector of entry and mid level team members. <br><br>
+					Follow the "lead by example" model and always try to work as a single unit. <br><br>
+					Encourage exchange of experiences between members via meetups or small group discussion around a work relatable topic.
+				</Card>
+			</div>
+			<div>
+				<h2 class="section-title">Interests</h2>
+				<Card title="Product Development">
+					Scrum, Shape UP
+				</Card>	
+				<Card title="Automation">
+					Linux, Crawlers, Bots, Network
+				</Card>	
+				<Card title="Data Science">
+					Dataviz, Scrappers, Bots
+				</Card>	
 			</div>
 		</div>
+	</div>
+</div>
 
-		<!-- Timeline -->
-		<div class="container">
-			<ol class="timeline">
-				<li>
-					<p class="line">Experiences</p>
-					<TimelineItem date="Today - Apr. 2016">
-						Lead Developer @Geronimo
-					</TimelineItem>
-				</li>
-				
-				<li>
-					<TimelineItem date="Apr. 2016 - Sep. 2015">
-						Freelance
-					</TimelineItem>
-				</li>
-				
-				<li>
-					<p class="line">Education</p>
-					<TimelineItem date="2015 - 2013">
-						DUT "Métiers du multimédia et de l'internet"
-					</TimelineItem>
-				</li>
-				
-				<li>
-					<TimelineItem date="2013 - 2008">
-						Art & Design studies
-					</TimelineItem>
-				</li>
-			</ol>
-		</div>
-		<Footer />
-	</Layout>
-	
+<!-- Timeline -->
+<div class="container">
+	<ol class="timeline">
+		<li>
+			<p class="line">Experiences</p>
+			<TimelineItem date="Mar 2023 - Today">
+				Tech Lead @Unimed Seguros
+			</TimelineItem>
+		</li>
+		
+		<li>
+			<TimelineItem date="Oct. 2022 - Fev. 2023">
+				Backend Engineer @Justos
+			</TimelineItem>
+		</li>
+		
+		<li>
+			<p class="line">Education</p>
+			<TimelineItem date="2013 - 2016">
+				Marketing @ Anhembi Morumbi
+			</TimelineItem>
+		</li>
+		
+		<li>
+			<TimelineItem date="2007 - 2008">
+				Web Design @ Fernando Prestes
+			</TimelineItem>
+		</li>
+	</ol>
+</div>
+<Footer />
+</Layout>

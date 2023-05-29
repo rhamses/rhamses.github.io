@@ -1,0 +1,27 @@
+---
+import AchievementItem from '../components/AchievementItem.astro'
+---
+<section class="cards">
+  <AchievementItem unit="+" value="15" title="Years of experience">
+    Adapting and creating solutions for customer's needs
+  </AchievementItem>
+  <AchievementItem unit="+" value="03" title="Years as Tech Lead">
+    --
+  </AchievementItem>
+  <AchievementItem unit="%" value="30" title="Technical solutions">
+    --
+  </AchievementItem>
+  <AchievementItem unit="+" value="04" title="Blog Posts">
+    I write about Web APIs, backend development and cool tutorials.
+  </AchievementItem>
+</section>
+
+<style>
+  @media(min-width: 768px) {
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>
+
