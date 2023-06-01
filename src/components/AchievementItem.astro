@@ -3,33 +3,52 @@ export interface Props {
   unit: string;
   value: number;
   title: string;
+  link: string;
 }
 
-const { unit, value, title } = Astro.props;
+const { unit, value, title, link } = Astro.props;
 ---
-<div class="card">
-  <div class="skill-level">
-    <span class="skill--unit">{unit}</span>
-    <h2>{value}</h2>
+
+
+{(link) ? 
+  <a href={link} target="_blank" class="card">
+    <div class="skill-level">
+      <span class="skill--unit">{unit}</span>
+      <h2>{value}</h2>
+    </div>
+    
+    <div class="skill-meta">
+      <h3>{title}</h3>
+      <span><slot></slot></span>
+    </div>
+  </a>
+  : 
+  <div class="card">
+    <div class="skill-level">
+      <span class="skill--unit">{unit}</span>
+      <h2>{value}</h2>
+    </div>
+    
+    <div class="skill-meta">
+      <h3>{title}</h3>
+      <span><slot></slot></span>
+    </div>
   </div>
   
-  <div class="skill-meta">
-    <h3>{title}</h3>
-    <span><slot></slot></span>
-  </div>
-</div>
+}
+
 
 <style>
   .card {
     display: inline-flex;
     justify-content: center;
-    height: 200px;
+    /* height: 200px; */
     background-color: #EEF0F7;
     margin: 7px 5px;
     vertical-align: top;
     border-radius: 10px;
     text-align: center;
-    padding-top: 50px
+    padding: 50px 0;
   }
   
   .card-active,

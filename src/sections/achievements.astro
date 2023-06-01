@@ -5,18 +5,22 @@ import AchievementItem from '../components/AchievementItem.astro'
   <AchievementItem unit="+" value="15" title="Years of experience">
     Adapting and creating solutions for customer's needs
   </AchievementItem>
-  <AchievementItem unit="+" value="03" title="Years as Tech Lead">
+  <AchievementItem unit="+" value='04' title="Blog Posts" link="https://rhams.es">
+    I write about Web APIs, backend development and cool tutorials.
+  </AchievementItem>
+  <!-- <AchievementItem unit="+" value="03" title="Years as Tech Lead">
     --
   </AchievementItem>
   <AchievementItem unit="%" value="30" title="Technical solutions">
     --
-  </AchievementItem>
-  <AchievementItem unit="+" value="04" title="Blog Posts">
-    I write about Web APIs, backend development and cool tutorials.
-  </AchievementItem>
+  </AchievementItem> -->
 </section>
 
 <style>
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
   @media(min-width: 768px) {
     .cards {
       display: grid;
@@ -24,4 +28,10 @@ import AchievementItem from '../components/AchievementItem.astro'
     }
   }
 </style>
+
+<!-- <script type="module">
+  var teste = "asdasd";
+  fetch("http://blog.rhams.es/wp-json/wp/v2/posts")
+  .then(res => console.log(res.headers.get("x-wp-total")))
+</script> -->
 
