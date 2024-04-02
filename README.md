@@ -1,55 +1,29 @@
-# Astro Starter Kit: Basics
+# DevsCard
 
-```
-npm create astro@latest -- --template basics
-```
+A fully customizable template to create your online (and paper) resume without writing a single line of code.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Features
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **✍️ Intellisense** — provide your data in TypeScript files, getting autocompletion and description of each property right in your IDE.
+- **📱 Responsiveness** — the resume is created and automatically tested to look good both on mobile and desktop devices.
+- **🌠 Assets optimization** — all images in your CV are minimized and resized automatically at build time.
+- **⚡️ Performance** — get 100 for all Lighthouse metrics, ensuring a great experience for visitors and a high score for search engines.
+- **📄 PDF generation** — generate an accompanying PDF version of your CV with one command.
+- **🔶 Built-in icon sets** — choose from over 100 000 [Iconify](https://iconify.design/) icons to represent your skills.
+- **🌍 I18n** — customize your resume's locale, date formatting, and used translations.
+- **🔎 SEO friendly** — the entire website is designed with SEO in mind. All SEO-related config properties are required and well-described.
+- **🏭 Favicons generation** — invoke one command to generate all favicons and full app manifest for your website.
+- **🛠 Data helpers** — use built-in helpers to define your skills/socials once and reuse them across the configuration.
+- **🔀 Data transformers** — utilize type-safe data transformers to create multiple variants of your resume without duplicating your data.
 
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
+## Documentation
 
+To learn how to set up your resume, go to:
 
-## 🚀 Project Structure
+[https://devscard.gitbook.io/docs](https://devscard.gitbook.io/docs/setup-guide)
 
-Inside of your Astro project, you'll see the following folders and files:
+## Example
 
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+To see an example CV, visit the link below:
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+[https://devscard.netlify.app](https://devscard.netlify.app/)
