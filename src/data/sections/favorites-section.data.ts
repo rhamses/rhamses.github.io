@@ -1,14 +1,13 @@
 import type { FavoritesSection } from "@/types/sections/favorites-section.types";
 import type { ReadonlyDeep } from "type-fest";
-
+const lastfm_key = import.meta.env.lastfm_key;
 const recentMusic = async () => {
   const requestOptions = {
     method: "GET",
     redirect: "follow",
   };
   const responseBuffer = await fetch(
-    "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rhamses&api_key=8ea290ad3878ec6f09f4b68dcabbf3c9&format=json&limit=6",
-    requestOptions
+    `http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rhamses&api_key=${lastfm_key}&format=json&limit=6`
   );
   const response = await responseBuffer.json();
   // console.log("response", response);
