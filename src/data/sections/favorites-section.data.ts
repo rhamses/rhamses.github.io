@@ -1,264 +1,22 @@
 import type { FavoritesSection } from "@/types/sections/favorites-section.types";
 import type { ReadonlyDeep } from "type-fest";
 
-const recentMusic = () => {
-  const response = {
-    recenttracks: {
-      track: [
-        {
-          artist: {
-            mbid: "55e33230-0aa7-4461-931f-ea5e74fefa39",
-            "#text": "Charlie Parker",
-          },
-          streamable: "0",
-          image: [
-            {
-              size: "small",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/34s/151c165a50d8c4ffbdbf18b235749595.jpg",
-            },
-            {
-              size: "medium",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/64s/151c165a50d8c4ffbdbf18b235749595.jpg",
-            },
-            {
-              size: "large",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/174s/151c165a50d8c4ffbdbf18b235749595.jpg",
-            },
-            {
-              size: "extralarge",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/300x300/151c165a50d8c4ffbdbf18b235749595.jpg",
-            },
-          ],
-          mbid: "",
-          album: {
-            mbid: "cb4dc8e1-5369-49b7-a38d-66edab592091",
-            "#text": "April In Paris: The Genius Of Charlie Parker #2",
-          },
-          name: "Summertime",
-          url: "https://www.last.fm/music/Charlie+Parker/_/Summertime",
-          date: {
-            uts: "1713409337",
-            "#text": "18 Apr 2024, 03:02",
-          },
-        },
-        {
-          artist: {
-            mbid: "f4d2fc5a-cacb-47c8-b096-ee73864b1aa8",
-            "#text": "Bob James",
-          },
-          streamable: "0",
-          image: [
-            {
-              size: "small",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/34s/e4c2df0e66912c01614efb1a703e58e2.jpg",
-            },
-            {
-              size: "medium",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/64s/e4c2df0e66912c01614efb1a703e58e2.jpg",
-            },
-            {
-              size: "large",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/174s/e4c2df0e66912c01614efb1a703e58e2.jpg",
-            },
-            {
-              size: "extralarge",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/300x300/e4c2df0e66912c01614efb1a703e58e2.jpg",
-            },
-          ],
-          mbid: "",
-          album: {
-            mbid: "",
-            "#text": "Double Vision",
-          },
-          name: "Maputo",
-          url: "https://www.last.fm/music/Bob+James/_/Maputo",
-          date: {
-            uts: "1713407370",
-            "#text": "18 Apr 2024, 02:29",
-          },
-        },
-        {
-          artist: {
-            mbid: "8f60a47c-015b-4b70-957c-0871347d1b1d",
-            "#text": "Green Carnation",
-          },
-          streamable: "0",
-          image: [
-            {
-              size: "small",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/34s/a0948793c77f4ac79b6b5ba42fd9fe40.jpg",
-            },
-            {
-              size: "medium",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/64s/a0948793c77f4ac79b6b5ba42fd9fe40.jpg",
-            },
-            {
-              size: "large",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/174s/a0948793c77f4ac79b6b5ba42fd9fe40.jpg",
-            },
-            {
-              size: "extralarge",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/300x300/a0948793c77f4ac79b6b5ba42fd9fe40.jpg",
-            },
-          ],
-          mbid: "00f2ce2c-081f-3f5f-8184-cebe5c539241",
-          album: {
-            mbid: "0d30f895-392e-39fd-b47e-e2108d8e8190",
-            "#text": "The Acoustic Verses",
-          },
-          name: "The Burden Is Mine... Alone",
-          url: "https://www.last.fm/music/Green+Carnation/_/The+Burden+Is+Mine...+Alone",
-          date: {
-            uts: "1713407121",
-            "#text": "18 Apr 2024, 02:25",
-          },
-        },
-        {
-          artist: {
-            mbid: "f7c65346-9631-4220-9188-5e90baae58d5",
-            "#text": "Pain of Salvation",
-          },
-          streamable: "0",
-          image: [
-            {
-              size: "small",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/34s/87012ab55ac7ebec9a8432ac90c555db.jpg",
-            },
-            {
-              size: "medium",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/64s/87012ab55ac7ebec9a8432ac90c555db.jpg",
-            },
-            {
-              size: "large",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/174s/87012ab55ac7ebec9a8432ac90c555db.jpg",
-            },
-            {
-              size: "extralarge",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/300x300/87012ab55ac7ebec9a8432ac90c555db.jpg",
-            },
-          ],
-          mbid: "17f25ed6-39db-4cec-942b-55f2ad2c7de7",
-          album: {
-            mbid: "",
-            "#text": '"BE"',
-          },
-          name: "Iter Impius",
-          url: "https://www.last.fm/music/Pain+of+Salvation/_/Iter+Impius",
-          date: {
-            uts: "1713406409",
-            "#text": "18 Apr 2024, 02:13",
-          },
-        },
-        {
-          artist: {
-            mbid: "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
-            "#text": "Michael Jackson",
-          },
-          streamable: "0",
-          image: [
-            {
-              size: "small",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/34s/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-            {
-              size: "medium",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/64s/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-            {
-              size: "large",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/174s/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-            {
-              size: "extralarge",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/300x300/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-          ],
-          mbid: "2043f3c8-2302-4ff6-95af-3361b11ed7b5",
-          album: {
-            mbid: "11628a0e-99ad-433b-9259-6de49e72ca24",
-            "#text": "XSCAPE",
-          },
-          name: "Chicago (original version)",
-          url: "https://www.last.fm/music/Michael+Jackson/_/Chicago+(original+version)",
-          date: {
-            uts: "1713275573",
-            "#text": "16 Apr 2024, 13:52",
-          },
-        },
-        {
-          artist: {
-            mbid: "f27ec8db-af05-4f36-916e-3d57f91ecf5e",
-            "#text": "Michael Jackson",
-          },
-          streamable: "0",
-          image: [
-            {
-              size: "small",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/34s/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-            {
-              size: "medium",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/64s/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-            {
-              size: "large",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/174s/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-            {
-              size: "extralarge",
-              "#text":
-                "https://lastfm.freetls.fastly.net/i/u/300x300/b366cff64b1e4757c7f64e117142baa5.jpg",
-            },
-          ],
-          mbid: "0ea26db9-96eb-4a46-ad39-6da058625655",
-          album: {
-            mbid: "11628a0e-99ad-433b-9259-6de49e72ca24",
-            "#text": "XSCAPE",
-          },
-          name: "Do You Know Where Your Children Are (original version)",
-          url: "https://www.last.fm/music/Michael+Jackson/_/Do+You+Know+Where+Your+Children+Are+(original+version)",
-          date: {
-            uts: "1713274626",
-            "#text": "16 Apr 2024, 13:37",
-          },
-        },
-      ],
-      "@attr": {
-        user: "rhamses",
-        totalPages: "9441",
-        page: "1",
-        perPage: "6",
-        total: "56642",
-      },
-    },
+const recentMusic = async () => {
+  const requestOptions = {
+    method: "GET",
+    redirect: "follow",
   };
+  const responseBuffer = await fetch(
+    "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=rhamses&api_key=8ea290ad3878ec6f09f4b68dcabbf3c9&format=json&limit=6",
+    requestOptions
+  );
+  const response = await responseBuffer.json();
+  // console.log("response", response);
   const {
     recenttracks: { track: tracks },
   } = response;
   const result = [];
+  // console.log("tracks", tracks);
   for (const track of tracks) {
     const title = track.name;
     const image = track.image.find((img) => img.size === "large")?.["#text"];
@@ -266,6 +24,7 @@ const recentMusic = () => {
     const url = track.url;
     result.push({ title, image, type, url });
   }
+  // console.log("result", result);
   return result;
 };
 
@@ -282,7 +41,7 @@ const recentPodcast = () => {
       "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYzp0b2tlblR5cGUiOiJSRUZSRVNIIiwicGM6cHJvdmlkZXIiOiJQT0NLRVRfQ0FTVFMiLCJwYzp1dWlkIjoiODczYjIzZjAtM2JhMS00ZmQ2LTgzODktMDYzYTY1M2NlNDUwIiwic2NvcGVzIjpbIndlYnBsYXllciJdLCJqdGkiOiIyNmU2NTMwMy05YWZhLTRjYzUtYTM4Yi1hN2JiZWY1MmQwY2EiLCJpYXQiOjE3MDk3MzUyMTEsImV4cCI6MTc0MTI3MTIxMSwiaXNzIjoiaHR0cHM6Ly9hcGkucG9ja2V0Y2FzdHMuY29tIiwic3ViIjoiODczYjIzZjAtM2JhMS00ZmQ2LTgzODktMDYzYTY1M2NlNDUwIn0.uHM3P76EVjSgIGw_1wnbnFyZDYRQC65hfFzn_jIUk-s",
   };
   const { accessToken } = responsePodAuth;
-  console.log("accessToken", accessToken);
+  // console.log("accessToken", accessToken);
   const responsePodList = {
     podcasts: [
       {
@@ -7027,7 +6786,7 @@ const favoritesSectionData = {
   },
   medias: {
     title: "Music I'm listening",
-    data: recentMusic(),
+    data: await recentMusic(),
   },
 } as const satisfies ReadonlyDeep<FavoritesSection>;
 
