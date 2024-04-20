@@ -6757,11 +6757,11 @@ const favoritesSectionData = {
   //   ],
   // },
   videos: {
-    title: "Podcasts I just listened to",
+    title: "Podcasts I'm listening",
     data: recentPodcast(),
   },
   medias: {
-    title: "Music I'm listening",
+    title: "Music I just listened",
     data: await recentMusic(),
   },
 } as const satisfies ReadonlyDeep<FavoritesSection>;
