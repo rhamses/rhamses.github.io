@@ -2,6 +2,7 @@
 import type { FavoritesSection } from "@/types/sections/favorites-section.types";
 import LastFM from "../../../integrations/lastfm";
 import PocketCasts from "../../../integrations/pocketcasts";
+import BlogPosts from "../../../integrations/blog";
 import BookTile from "./book-tile.astro";
 import MediaTile from "./media-tile.astro";
 import PersonTile from "./person-tile.astro";
@@ -15,13 +16,17 @@ const { config, books, medias, people, videos } = Astro.props;
 
 const lastfm = await LastFM();
 const podcasts = await PocketCasts();
-console.log("podcasts", podcasts);
+const posts = await BlogPosts();
+const blogPosts = {
+  title: "Latest Blog Posts",
+  data: posts,
+};
 ---
 
 <SectionCard {...config}>
   <div class="flex flex-col gap-16">
-    <FavoritesSubSection minTileWidth={160} subSection={books}>
-      {books?.data.map((book) => <BookTile {...book} />)}
+    <FavoritesSubSection minTileWidth={400} subSection={blogPosts}>
+      {blogPosts?.data.map((post) => <VideoTile {...post} />)}
     </FavoritesSubSection>
     <FavoritesSubSection minTileWidth={120} subSection={people}>
       {people?.data.map((person) => <PersonTile {...person} />)}
