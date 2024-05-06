@@ -2,7 +2,7 @@
 import type { FavoritesSection } from "@/types/sections/favorites-section.types";
 import LastFM from "../../../integrations/lastfm";
 import PocketCasts from "../../../integrations/pocketcasts";
-// import BlogPosts from "../../../integrations/blog";
+import BlogPosts from "../../../integrations/blog";
 import BookTile from "./book-tile.astro";
 import MediaTile from "./media-tile.astro";
 import PersonTile from "./person-tile.astro";
@@ -16,8 +16,8 @@ const { config, books, medias, people, videos } = Astro.props;
 
 const lastfm = await LastFM();
 const podcasts = await PocketCasts();
-// const posts = await BlogPosts();
-const posts = [];
+const posts = await BlogPosts();
+//const posts = [];
 const blogPosts = {
   title: "Latest Blog Posts",
   data: posts,
