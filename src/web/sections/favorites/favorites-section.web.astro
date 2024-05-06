@@ -3,7 +3,7 @@ import type { FavoritesSection } from "@/types/sections/favorites-section.types"
 import LastFM from "../../../integrations/lastfm";
 import PocketCasts from "../../../integrations/pocketcasts";
 import BlogPosts from "../../../integrations/blog";
-import BookTile from "./book-tile.astro";
+// import BookTile from "./book-tile.astro";
 import MediaTile from "./media-tile.astro";
 import PersonTile from "./person-tile.astro";
 import VideoTile from "./video-tile.astro";
@@ -12,7 +12,7 @@ import FavoritesSubSection from "./favorites-sub-section.astro";
 
 export interface Props extends FavoritesSection {}
 
-const { config, books, medias, people, videos } = Astro.props;
+const { config, medias, people, videos } = Astro.props;
 
 const lastfm = await LastFM();
 const podcasts = await PocketCasts();
