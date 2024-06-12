@@ -54,12 +54,12 @@ const portfolioSectionData = {
       pdfDetails: [
         {
           label: "Demo",
-          value: "https://golden-bulls-d73jd7.netlify.app",
+          value: "https://fipe.netlify.app",
           url: "#",
         },
         {
           label: "Repository",
-          value: "https://github.com/mark-freeman/golden-bulls",
+          value: "https://github.com/rhamses/fipe",
           url: "#",
         },
       ],
