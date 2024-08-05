@@ -1,15 +1,34 @@
 ---
-import type { Video } from '@/types/sections/favorites-section.types';
-import Photo from '@/components/photo.astro';
-import Typography from '@/web/components/typography.astro';
+import type { Video } from "@/types/sections/favorites-section.types";
+import Photo from "@/components/photo.astro";
+import Typography from "@/web/components/typography.astro";
 
 export interface Props extends Video {}
 
 const { title, url, image } = Astro.props;
 ---
 
-<a href={url} target="_blank" class="flex w-full flex-col gap-3 transition duration-300 hover:translate-y-2">
-  <Photo class="aspect-video rounded-lg object-cover shadow-md" src={image} alt={title} width={480} height={270} />
+<style>
+  @media screen and (max-width: 480px) {
+    .aspect-video {
+      max-width: 320px;
+      width: 100vw;
+    }
+  }
+</style>
+
+<a
+  href={url}
+  target="_blank"
+  class="flex w-full flex-col gap-3 transition duration-300 hover:translate-y-2"
+>
+  <Photo
+    class="aspect-video rounded-lg object-cover shadow-md"
+    src={image}
+    alt={title}
+    width={480}
+    height={270}
+  />
   <Typography variant="tile-title">
     {title}
   </Typography>
